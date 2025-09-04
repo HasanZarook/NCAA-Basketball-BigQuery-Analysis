@@ -7,7 +7,7 @@ SELECT
   venue_name,
   venue_capacity
 FROM
-  `taskproj-398609.ncaa_basketball.mbb_teams`
+  `your id.ncaa_basketball.mbb_teams`
 WHERE
   market = 'Stanford'
 LIMIT
@@ -35,7 +35,7 @@ SELECT
   market,
   color
 FROM
-  `taskproj-398609.ncaa_basketball.team_colors`
+  `your id.ncaa_basketball.team_colors`
 WHERE
   color like'#FF%'
   OR color like  '#ff%'
@@ -55,7 +55,7 @@ SELECT
   round (AVG(a_points_game),
     2) AS avg_opponent
 FROM
-  `taskproj-398609.ncaa_basketball.mbb_games_sr`
+  `your id.ncaa_basketball.mbb_games_sr`
 WHERE
  (season between 2013 and 2017) and h_points_game>a_points_game and h_market='Stanford'
 LIMIT
